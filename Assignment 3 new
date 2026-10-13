@@ -1,0 +1,23 @@
+CREATE DATABASE CollegeDB;
+
+USE CollegeDB;
+
+CREATE TABLE College (
+    College_ID INT NOT NULL UNIQUE,
+    College_Name VARCHAR(50) NOT NULL,
+    Sta_RollNo INT NOT NULL,
+    Sta_Name VARCHAR(50) NOT NULL
+);
+
+-- Insert values
+INSERT INTO College
+VALUES (101, 'ABC College', 1001, 'Arun');
+
+INSERT INTO College
+VALUES (102, 'XYZ College', 1002, 'Priya');
+
+INSERT INTO College
+VALUES (103, 'DEF College', 1003, 'Kumar');
+
+-- Display the result
+SELECT * FROM College;
